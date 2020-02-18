@@ -1,0 +1,136 @@
+$colors: (
+  bgcolor: #272727,
+  primary: #0a2463,
+  secondary: #3e92cc,
+  accent: #ee537a,
+  contrast: #eff1f3,
+  darkcontrast: #1e1b18
+);
+
+$primaryfont: "Merriweather", serif;
+$secondaryfont: "Lato", sans-serif;
+
+body {
+  font-size: 24px;
+  background-color: map-get($colors, bgcolor);
+  padding: 0px;
+  margin: 0px;
+}
+main {
+  min-height: 80vh;
+  margin-top: 5vh;
+}
+
+.info {
+  background-color: map-get($colors, contrast);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  display: flex;
+
+  &__name {
+    margin: 0 15px;
+  }
+}
+
+.name {
+  &__name {
+    margin: 5px 5px;
+    color: map-get($colors, primary);
+    font-size: 1.3em;
+    margin-top: 15px;
+    font-family: $primaryfont;
+  }
+  &__title {
+    color: map-get($colors, secondary);
+    font-size: 0.8em;
+    margin: 5px 5px;
+    margin-bottom: 15px;
+    font-family: $secondaryfont;
+  }
+}
+
+.info__links {
+  margin-left: auto;
+  height: auto;
+  display: flex;
+  align-self: center;
+}
+
+.links {
+  &__github img {
+    width: 50px;
+    margin: 0px 5px;
+  }
+  &__linkedin img {
+    width: 50px;
+    margin: 0px 5px;
+  }
+}
+
+.skills {
+  background-color: map-get($colors, accent);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: 3vw;
+  margin-right: 3vw;
+
+  &__title {
+    padding: 15px 15px;
+    color: map-get($colors, darkcontrast);
+    font-family: $primaryfont;
+    & h2 {
+      font-size: 1.2em;
+    }
+  }
+
+  &__projects,
+  &__languages {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.skills__projects {
+  & p {
+    font-size: 0.7em;
+    font-family: $secondaryfont;
+    color: map-get($colors, darkcontrast);
+  }
+}
+.projects {
+  &__project1,
+  &__project2 {
+    margin: 0 15px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 100px;
+    background-color: map-get($colors, bgcolor);
+  }
+}
+
+.languages {
+  &__html,
+  &__css,
+  &__js,
+  &__csharp {
+    margin: 15px 15px;
+    margin-top: 0px;
+    height: 80px;
+  }
+}
+
+.footer {
+  //15vh total
+  margin-top: 3vh;
+  height: 12vh;
+  width: 100%;
+  background-color: map-get($colors, contrast);
+  & p {
+    font-size: 0.8em;
+    font-family: $primaryfont;
+    padding: 5px;
+    color: map-get($colors, darkcontrast);
+  }
+}

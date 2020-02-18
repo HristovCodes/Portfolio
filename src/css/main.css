@@ -1,0 +1,124 @@
+body {
+  font-size: 24px;
+  background-color: #272727;
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  min-height: 80vh;
+  margin-top: 5vh;
+}
+
+.info {
+  background-color: #eff1f3;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info__name {
+  margin: 0 15px;
+}
+
+.name__name {
+  margin: 5px 5px;
+  color: #0a2463;
+  font-size: 1.3em;
+  margin-top: 15px;
+  font-family: "Merriweather", serif;
+}
+
+.name__title {
+  color: #3e92cc;
+  font-size: 0.8em;
+  margin: 5px 5px;
+  margin-bottom: 15px;
+  font-family: "Lato", sans-serif;
+}
+
+.info__links {
+  margin-left: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.links__github img {
+  width: 50px;
+  margin: 0px 5px;
+}
+
+.links__linkedin img {
+  width: 50px;
+  margin: 0px 5px;
+}
+
+.skills {
+  background-color: #ee537a;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+.skills__title {
+  padding: 15px 15px;
+  color: #1e1b18;
+  font-family: "Merriweather", serif;
+}
+
+.skills__title h2 {
+  font-size: 1.2em;
+}
+
+.skills__projects, .skills__languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.skills__projects p {
+  font-size: 0.7em;
+  font-family: "Lato", sans-serif;
+  color: #1e1b18;
+}
+
+.projects__project1, .projects__project2 {
+  margin: 0 15px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 100px;
+  background-color: #272727;
+}
+
+.languages__html, .languages__css, .languages__js, .languages__csharp {
+  margin: 15px 15px;
+  margin-top: 0px;
+  height: 80px;
+}
+
+.footer {
+  margin-top: 3vh;
+  height: 12vh;
+  width: 100%;
+  background-color: #eff1f3;
+}
+
+.footer p {
+  font-size: 0.8em;
+  font-family: "Merriweather", serif;
+  padding: 5px;
+  color: #1e1b18;
+}
+/*# sourceMappingURL=main.css.map */
