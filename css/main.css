@@ -7,7 +7,7 @@ body {
 
 main {
   min-height: 80vh;
-  margin-top: 5vh;
+  margin: 5vh 0;
 }
 
 .info {
@@ -76,10 +76,48 @@ main {
 }
 
 .skills__title h2 {
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 
-.skills__projects, .skills__languages {
+.skills__projects p {
+  font-family: "Lato", sans-serif;
+  color: #1e1b18;
+}
+
+.projects__project {
+  margin: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project__screenshot {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.project__screenshot .screenshot__image {
+  display: block;
+  width: 35vw;
+  margin: 0 auto;
+}
+
+.project__about {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: auto 0;
+}
+
+.project__about .about__name {
+  margin: 15px 0;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.project__about .about__buttons {
+  margin: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,27 +126,18 @@ main {
           justify-content: space-evenly;
 }
 
-.skills__projects p {
-  font-size: 0.7em;
-  font-family: "Lato", sans-serif;
-  color: #1e1b18;
-}
-
-.projects__project1, .projects__project2 {
-  margin: 0 15px;
-  margin-bottom: 10px;
-  width: 150px;
-  height: 100px;
-  background-color: #272727;
-}
-
-.languages__html, .languages__css, .languages__js, .languages__csharp {
-  margin: 15px 15px;
-  margin-top: 0px;
-  height: 80px;
+.project__about .about__buttons a {
+  width: 5vw;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: center;
+  color: #eff1f3;
+  text-decoration: none;
+  background-color: #0a2463;
 }
 
 .footer {
+  display: none;
   margin-top: 3vh;
   height: 12vh;
   width: 100%;

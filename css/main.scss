@@ -18,7 +18,7 @@ body {
 }
 main {
   min-height: 80vh;
-  margin-top: 5vh;
+  margin: 5vh 0;
 }
 
 .info {
@@ -80,48 +80,60 @@ main {
     padding: 15px 15px;
     color: map-get($colors, darkcontrast);
     font-family: $primaryfont;
-    & h2 {
-      font-size: 1.2em;
+    h2 {
+      font-size: 1.6em;
     }
-  }
-
-  &__projects,
-  &__languages {
-    display: flex;
-    justify-content: space-evenly;
   }
 }
 
 .skills__projects {
-  & p {
-    font-size: 0.7em;
+  p {
     font-family: $secondaryfont;
     color: map-get($colors, darkcontrast);
   }
 }
-.projects {
-  &__project1,
-  &__project2 {
-    margin: 0 15px;
-    margin-bottom: 10px;
-    width: 150px;
-    height: 100px;
-    background-color: map-get($colors, bgcolor);
-  }
+
+.projects__project {
+  margin: 25px 0;
+  display: flex;
 }
 
-.languages {
-  &__html,
-  &__css,
-  &__js,
-  &__csharp {
-    margin: 15px 15px;
-    margin-top: 0px;
-    height: 80px;
+.project {
+  &__screenshot {
+    flex-grow: 1;
+    .screenshot__image {
+      display: block;
+      width: 35vw;
+      margin: 0 auto;
+    }
+  }
+  &__about {
+    flex-grow: 1;
+    margin: auto 0;
+    .about__name {
+      margin: 15px 0;
+      font-size: 1.2em;
+      text-align: center;
+    }
+    .about__buttons {
+      margin: 15px 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .about__buttons a {
+      width: 5vw;
+      border-radius: 5px;
+      padding: 5px 10px;
+      text-align: center;
+      color: map-get($colors, contrast);
+      text-decoration: none;
+      background-color: map-get($colors, primary);
+    }
   }
 }
 
 .footer {
+  display: none;
   //15vh total
   margin-top: 3vh;
   height: 12vh;
