@@ -1,9 +1,9 @@
 $colors: (
-  bgcolor: #272727,
+  bgcolor: #eff1f3,
   primary: #0a2463,
-  secondary: #3e92cc,
-  accent: #ee537a,
-  contrast: #eff1f3,
+  secondary: #65def1,
+  accent: #c9ddff,
+  contrast: #f96900,
   darkcontrast: #1e1b18
 );
 
@@ -18,7 +18,7 @@ body {
 }
 main {
   min-height: 80vh;
-  margin: 5vh 0;
+  margin: 5vh auto;
 }
 
 .info {
@@ -86,7 +86,7 @@ main {
     }
     p {
       font-family: $secondaryfont;
-      font-size: 1.15em;
+      font-size: 0.8em;
       margin-top: 5px;
       text-align: center;
     }
@@ -141,7 +141,7 @@ main {
       font-size: 0.7em;
       text-align: center;
       font-family: $secondaryfont;
-      color: map-get($colors, contrast);
+      color: map-get($colors, secondary);
       text-decoration: none;
       background-color: map-get($colors, primary);
     }

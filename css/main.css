@@ -1,17 +1,17 @@
 body {
   font-size: 24px;
-  background-color: #272727;
+  background-color: #eff1f3;
   padding: 0px;
   margin: 0px;
 }
 
 main {
   min-height: 80vh;
-  margin: 5vh 0;
+  margin: 5vh auto;
 }
 
 .info {
-  background-color: #eff1f3;
+  background-color: #f96900;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin-left: 3vw;
@@ -34,7 +34,7 @@ main {
 }
 
 .name__title {
-  color: #3e92cc;
+  color: #65def1;
   font-size: 0.65em;
   margin: 5px 5px;
   margin-bottom: 15px;
@@ -62,7 +62,7 @@ main {
 }
 
 .skills {
-  background-color: #ee537a;
+  background-color: #c9ddff;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   margin-left: 3vw;
@@ -82,7 +82,7 @@ main {
 
 .skills__title p {
   font-family: "Lato", sans-serif;
-  font-size: 1.15em;
+  font-size: 0.8em;
   margin-top: 5px;
   text-align: center;
 }
@@ -149,7 +149,7 @@ main {
   font-size: 0.7em;
   text-align: center;
   font-family: "Lato", sans-serif;
-  color: #eff1f3;
+  color: #65def1;
   text-decoration: none;
   background-color: #0a2463;
 }
@@ -159,7 +159,7 @@ main {
   margin-top: 3vh;
   height: 12vh;
   width: 100%;
-  background-color: #eff1f3;
+  background-color: #f96900;
 }
 
 .footer p {
