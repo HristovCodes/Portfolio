@@ -103,7 +103,7 @@ main {
     flex-grow: 1;
     .screenshot__image {
       display: block;
-      width: 35vw;
+      width: 40vw;
       margin: 0 auto;
     }
   }
@@ -111,17 +111,17 @@ main {
     flex-grow: 1;
     margin: auto 0;
     .about__name {
-      margin: 15px 0;
+      margin-bottom: 10px;
       font-size: 1.2em;
       text-align: center;
     }
     .about__buttons {
-      margin: 15px 0;
+      margin-top: 10px;
       display: flex;
       justify-content: space-evenly;
     }
     .about__buttons a {
-      width: 5vw;
+      width: 70px;
       border-radius: 5px;
       padding: 5px 10px;
       text-align: center;
