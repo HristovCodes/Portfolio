@@ -44,7 +44,7 @@ main {
   }
   &__title {
     color: map-get($colors, secondary);
-    font-size: 0.7em;
+    font-size: 0.65em;
     margin: 5px 5px;
     margin-bottom: 15px;
     font-family: $secondaryfont;
@@ -81,12 +81,13 @@ main {
     color: map-get($colors, darkcontrast);
     h2 {
       font-family: $primaryfont;
-      font-size: 1.6em;
+      font-size: 1.3em;
       text-align: center;
     }
     p {
       font-family: $secondaryfont;
-      margin-top: 25px;
+      font-size: 1.15em;
+      margin-top: 5px;
       text-align: center;
     }
   }
