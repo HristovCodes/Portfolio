@@ -38,13 +38,13 @@ main {
   &__name {
     margin: 5px 5px;
     color: map-get($colors, primary);
-    font-size: 1.3em;
+    font-size: 0.9em;
     margin-top: 15px;
     font-family: $primaryfont;
   }
   &__title {
     color: map-get($colors, secondary);
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin: 5px 5px;
     margin-bottom: 15px;
     font-family: $secondaryfont;
@@ -79,9 +79,15 @@ main {
   &__title {
     padding: 15px 15px;
     color: map-get($colors, darkcontrast);
-    font-family: $primaryfont;
     h2 {
+      font-family: $primaryfont;
       font-size: 1.6em;
+      text-align: center;
+    }
+    p {
+      font-family: $secondaryfont;
+      margin-top: 25px;
+      text-align: center;
     }
   }
 }
@@ -111,9 +117,16 @@ main {
     flex-grow: 1;
     margin: auto 0;
     .about__name {
-      margin-bottom: 10px;
-      font-size: 1.2em;
+      margin-bottom: 5px;
+      font-size: 0.7em;
       text-align: center;
+      font-family: $primaryfont;
+    }
+    .about__technologies {
+      margin-bottom: 10px;
+      font-size: 0.6em;
+      text-align: center;
+      font-family: $secondaryfont;
     }
     .about__buttons {
       margin-top: 10px;
@@ -121,10 +134,12 @@ main {
       justify-content: space-evenly;
     }
     .about__buttons a {
-      width: 70px;
+      width: 50px;
       border-radius: 5px;
       padding: 5px 10px;
+      font-size: 0.7em;
       text-align: center;
+      font-family: $secondaryfont;
       color: map-get($colors, contrast);
       text-decoration: none;
       background-color: map-get($colors, primary);

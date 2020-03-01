@@ -28,14 +28,14 @@ main {
 .name__name {
   margin: 5px 5px;
   color: #0a2463;
-  font-size: 1.3em;
+  font-size: 0.9em;
   margin-top: 15px;
   font-family: "Merriweather", serif;
 }
 
 .name__title {
   color: #3e92cc;
-  font-size: 0.8em;
+  font-size: 0.7em;
   margin: 5px 5px;
   margin-bottom: 15px;
   font-family: "Lato", sans-serif;
@@ -72,11 +72,18 @@ main {
 .skills__title {
   padding: 15px 15px;
   color: #1e1b18;
-  font-family: "Merriweather", serif;
 }
 
 .skills__title h2 {
+  font-family: "Merriweather", serif;
   font-size: 1.6em;
+  text-align: center;
+}
+
+.skills__title p {
+  font-family: "Lato", sans-serif;
+  margin-top: 25px;
+  text-align: center;
 }
 
 .skills__projects p {
@@ -111,9 +118,17 @@ main {
 }
 
 .project__about .about__name {
-  margin-bottom: 10px;
-  font-size: 1.2em;
+  margin-bottom: 5px;
+  font-size: 0.7em;
   text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+.project__about .about__technologies {
+  margin-bottom: 10px;
+  font-size: 0.6em;
+  text-align: center;
+  font-family: "Lato", sans-serif;
 }
 
 .project__about .about__buttons {
@@ -127,10 +142,12 @@ main {
 }
 
 .project__about .about__buttons a {
-  width: 70px;
+  width: 50px;
   border-radius: 5px;
   padding: 5px 10px;
+  font-size: 0.7em;
   text-align: center;
+  font-family: "Lato", sans-serif;
   color: #eff1f3;
   text-decoration: none;
   background-color: #0a2463;
