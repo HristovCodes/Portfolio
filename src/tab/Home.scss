@@ -1,0 +1,83 @@
+@import "../App.scss";
+
+.Home {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.Information {
+  grid-area: 1 / 1 / 2 / 4;
+}
+.Projects {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.Links {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.Skills {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.Information {
+  display: flex;
+  flex-direction: row;
+  .Name {
+    font-family: $mainfont;
+    color: #4ae444;
+    font-size: 3em;
+    padding: 15px 25px;
+    padding-bottom: 0px;
+  }
+  .Title {
+    font-family: $secondaryfont;
+    color: #3fc83a;
+    font-size: 1.4em;
+    padding: 0px 25px;
+  }
+  .Contacts {
+    span {
+      color: #3fc83a;
+      font-size: 1.2em;
+    }
+    p {
+      padding-bottom: 8px;
+    }
+    a {
+      color: #5d5d5d;
+      text-decoration: none;
+    }
+    flex-grow: 1;
+    text-align: end;
+    color: #5d5d5d;
+    font-family: $secondaryfont;
+    font-size: 1em;
+    padding: 20px 25px;
+    padding-bottom: 0px;
+  }
+}
+
+.Skills {
+  padding-top: 25px;
+  padding-left: 25px;
+  li {
+    border-left: solid 0.5px #4ae444;
+    padding: 3px 2.5px;
+    font-family: $secondaryfont;
+    color: #727272;
+    font-size: 1em;
+  }
+  .Category {
+    font-family: $mainfont;
+    text-decoration: underline;
+    color: #5d5d5d;
+    font-size: 1.2em;
+  }
+}
+
+.Projects,
+.Links {
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
-import Tab from "./Tab.js";
+import "./reset.css";
+import Tab from "./tab/Tab.js";
 
 function App() {
   return (
