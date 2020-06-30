@@ -162,3 +162,11 @@ main {
     color: map-get($colors, darkcontrast);
   }
 }
+
+.divider {
+  width: 90%;
+  margin: 0 auto;
+  height: 2px;
+  border-radius: 25px;
+  background-color: map-get($colors, $key: darkcontrast);
+}

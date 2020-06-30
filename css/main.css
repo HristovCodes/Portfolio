@@ -168,4 +168,12 @@ main {
   padding: 5px;
   color: #1e1b18;
 }
+
+.divider {
+  width: 90%;
+  margin: 0 auto;
+  height: 2px;
+  border-radius: 25px;
+  background-color: #1e1b18;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Da+2|Galada&display=swap");
+$mainfont: "Galada", cursive;
+$secondaryfont: "Baloo Da 2", cursive;
+
+body {
+  background-color: #ffffff;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.App {
+  height: 100vh;
+}
+
+.Tab {
+  grid-area: tab;
+  display: grid;
+  grid-template-columns: 1fr 15fr 1fr;
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-areas:
+    "nav nav nav"
+    ". text ."
+    ". . .";
+}
+
+.Buttons {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  background-color: #88c868;
+  button {
+    font-family: $mainfont;
+    font-size: 1.5em;
+    font-weight: lighter;
+    background-color: #7abb5a;
+    transition: border 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    border: 2px solid #7abb5a;
+    &:hover {
+      transform: scale(1.1, 1.1);
+      border: 2px solid #6aaa4a;
+      color: #366e1a;
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+.Home,
+.Designer,
+.About {
+  min-height: 70vh;
+  background-color: #ffffffe7;
+  grid-area: text;
+  padding: 0 25px;
+  padding-bottom: 20px;
+  h1 {
+    margin: 10px 0;
+    font-family: $mainfont;
+    font-size: 2em;
+    color: #88c868;
+  }
+  h2 {
+    font-family: $secondaryfont;
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #757575;
+
+    span {
+      color: #88c868;
+      font-weight: bold;
+    }
+  }
+  p {
+    font-family: $secondaryfont;
+    font-size: 1.3em;
+    margin: 5px 0;
+    color: #88c868;
+  }
+}
+
+.Designer {
+  .Display {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-rows: auto;
+    .Card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 245px;
+      text-align: center;
+      border: 2px solid #88c868;
+      h2 {
+        color: #000000;
+      }
+      img {
+        height: 120px;
+      }
+    }
+    @media (max-width: 524px) {
+      .Card {
+        height: 300px;
+        img {
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+/*
+.Home {
+  text-align: center;
+  h1 {
+    padding-top: 100px;
+  }
+  h2 {
+    color: #ebebeb;
+  }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(https://images.unsplash.com/photo-1512132411229-c30391241dd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+*/
