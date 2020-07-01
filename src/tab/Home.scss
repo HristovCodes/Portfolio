@@ -3,81 +3,150 @@
 .Home {
   grid-area: content;
   display: grid;
-  grid-template-columns: 2fr 5fr 1fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 2fr 7fr 1fr;
+  grid-template-rows: 2fr 8fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  grid-template-areas:
+    "info info info"
+    "skills projects links";
 }
 
 .Information {
-  grid-area: 1 / 1 / 2 / 4;
+  grid-area: info;
 }
 .Projects {
-  grid-area: 2 / 2 / 3 / 3;
+  grid-area: projects;
 }
 .Links {
-  grid-area: 2 / 3 / 3 / 4;
+  grid-area: links;
 }
 .Skills {
-  grid-area: 2 / 1 / 3 / 2;
+  grid-area: skills;
 }
 
 .Information {
   display: flex;
   flex-direction: row;
-  .Name {
-    font-family: $mainfont;
-    color: #4ae444;
-    font-size: 3em;
-    padding: 15px 25px;
-    padding-bottom: 0px;
-  }
-  .Title {
-    font-family: $secondaryfont;
-    color: #3fc83a;
-    font-size: 1.4em;
-    padding: 0px 25px;
+  .Me {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+    .Name {
+      font-family: $mainfont;
+      color: #4ae444;
+      font-size: 3em;
+    }
+    .Title {
+      font-family: $secondaryfont;
+      color: #3fc83a;
+      font-size: 1.4em;
+    }
   }
   .Contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
     span {
       color: #3fc83a;
       font-size: 1.2em;
     }
-    p {
+    p,
+    a {
       padding-bottom: 8px;
     }
     a {
       color: #5d5d5d;
       text-decoration: none;
     }
-    flex-grow: 1;
-    text-align: end;
+    text-align: start;
     color: #5d5d5d;
     font-family: $secondaryfont;
     font-size: 1em;
-    padding: 20px 25px;
-    padding-bottom: 0px;
   }
 }
 
 .Skills {
-  padding-top: 25px;
-  padding-left: 25px;
-  li {
-    border-left: solid 0.5px #4ae444;
-    padding: 3px 2.5px;
-    font-family: $secondaryfont;
-    color: #727272;
-    font-size: 1em;
-  }
   .Category {
-    font-family: $mainfont;
-    text-decoration: underline;
-    color: #5d5d5d;
-    font-size: 1.2em;
+    padding-top: 25px;
+    padding-left: 25px;
+    li {
+      border-left: solid 0.5px #4ae444;
+      padding: 3px 2.5px;
+      font-family: $secondaryfont;
+      color: #727272;
+      font-size: 1em;
+    }
+    .Header {
+      font-family: $mainfont;
+      text-decoration: underline;
+      color: #5d5d5d;
+      font-size: 1.2em;
+    }
   }
 }
 
-.Projects,
-.Links {
+.Projects {
+  .Card {
+    margin: 25px 25px;
+    border-left: solid 0.5px #4ae444;
+    .PrjName {
+      font-family: $mainfont;
+      text-decoration: underline;
+      color: #5d5d5d;
+      font-size: 1.2em;
+      padding: 4px 10px;
+    }
+
+    .Description {
+      font-family: $secondaryfont;
+      color: #727272;
+      font-size: 1em;
+      padding: 4px 10px;
+    }
+
+    .Languages {
+      color: #727272;
+      font-family: $secondaryfont;
+      font-size: 0.8em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .Lang {
+        padding: 4px 5px;
+        margin: 10px 10px;
+        border: solid 2px #4ae444;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .Information .Me {
+    padding-top: 25px;
+    .Name {
+      font-size: 2em;
+    }
+    .Title {
+      font-size: 1.2em;
+    }
+  }
+  .Information .Contacts {
+    font-size: 0.8em;
+  }
+  .Skills {
+    display: flex;
+    flex-direction: row;
+  }
+  .Home {
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "info info info"
+      "projects projects links"
+      "skills skills skills";
+  }
 }

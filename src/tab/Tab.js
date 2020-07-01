@@ -1,12 +1,10 @@
 import React from "react";
 import Home from "./Home.js";
-import About from "./About.js";
 
 class Tab extends React.Component {
   constructor(props) {
     super(props);
     this.changeTabToHome = this.changeTabToHome.bind(this);
-    this.changeTabToAbout = this.changeTabToAbout.bind(this);
     this.state = {
       tab: Home,
     };
@@ -16,16 +14,11 @@ class Tab extends React.Component {
     this.setState({ tab: Home });
   }
 
-  changeTabToAbout() {
-    this.setState({ tab: About });
-  }
-
   render() {
     return (
       <div className="Tab">
         <div className="Nav">
           <Button onBtnPress={this.changeTabToHome} name="Home"></Button>
-          <Button onBtnPress={this.changeTabToAbout} name="About"></Button>
         </div>
         <Body tab={this.state.tab}></Body>
       </div>

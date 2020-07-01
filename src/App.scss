@@ -4,10 +4,7 @@ $secondaryfont: "Baloo Da 2", cursive;
 
 body {
   background-color: #ffffff;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
+  overflow-y: clip;
 }
 
 .App {
@@ -19,7 +16,7 @@ body {
   grid-area: tab;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 10fr;
+  grid-template-rows: 1fr 15fr;
   grid-template-areas:
     "nav"
     "content";
@@ -56,6 +53,7 @@ body {
 
 @media (max-width: 550px) {
   .Tab {
+    grid-template-rows: 15fr 1fr;
     grid-template-areas:
       "content"
       "nav";
