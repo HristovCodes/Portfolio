@@ -1,5 +1,5 @@
 {
-  "name": "restaurant-page-reactjs",
+  "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
-  "homepage": "https://hristovcodes.github.io/restaurant-page-reactjs",
+  "homepage": "https://hristovcodes.github.io/Portfolio/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

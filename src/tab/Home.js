@@ -8,7 +8,6 @@ export default class Home extends React.Component {
         <Information></Information>
         <Skills></Skills>
         <Projects></Projects>
-        <Links></Links>
       </div>
     );
   }
@@ -76,11 +75,39 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="Projects">
-        <Card
-          name="Pellio"
-          languages={["C#", "EF", "HTML", "CSS", "ES6"]}
-          description="Asp.Net Core e-commerce web app develepod using Asp.Net Core, EF Core and MSSQLServer for the database."
-        ></Card>
+        <div className="Container">
+          <Project
+            name="Pellio"
+            languages={["C#", "EF", "HTML", "CSS", "ES6"]}
+            description="Asp.Net Core e-commerce web app develepod using Asp.Net Core, EF Core and MSSQLServer for the database."
+          ></Project>
+          <Links
+            code="https://github.com/HristovCodes/Pellio-Project"
+            visit=""
+          ></Links>
+        </div>
+        <div className="Container">
+          <Project
+            name="Pellio"
+            languages={["C#", "EF", "HTML", "CSS", "ES6"]}
+            description="Asp.Net Core e-commerce web app develepod using Asp.Net Core, EF Core and MSSQLServer for the database."
+          ></Project>
+          <Links
+            code="https://github.com/HristovCodes/Pellio-Project"
+            visit="asd"
+          ></Links>
+        </div>
+        <div className="Container">
+          <Project
+            name="Pellio"
+            languages={["C#", "EF", "HTML", "CSS", "ES6"]}
+            description="Asp.Net Core e-commerce web app develepod using Asp.Net Core, EF Core and MSSQLServer for the database."
+          ></Project>
+          <Links
+            code="https://github.com/HristovCodes/Pellio-Project"
+            visit="asd"
+          ></Links>
+        </div>
       </div>
     );
   }
@@ -88,11 +115,30 @@ class Projects extends React.Component {
 
 class Links extends React.Component {
   render() {
-    return <div className="Links"></div>;
+    if (this.props.visit === "") {
+      return (
+        <div className="Links">
+          <a target="_blank" href={this.props.code} className="Btn">
+            Code
+          </a>
+        </div>
+      );
+    } else {
+      return (
+        <div className="Links">
+          <a target="_blank" href={this.props.code} className="Btn">
+            Code
+          </a>
+          <a target="_blank" href={this.props.visit} className="Btn">
+            Visit
+          </a>
+        </div>
+      );
+    }
   }
 }
 
-class Card extends React.Component {
+class Project extends React.Component {
   render() {
     let langs = (
       <div className="Languages">
@@ -102,7 +148,7 @@ class Card extends React.Component {
       </div>
     );
     return (
-      <div className="Card">
+      <div className="Project">
         <p className="PrjName">{this.props.name}</p>
         <p className="Description">{this.props.description}</p>
         {langs}
