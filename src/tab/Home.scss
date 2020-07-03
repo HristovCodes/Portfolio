@@ -1,6 +1,7 @@
 @import "../App.scss";
 
 .Home {
+  height: 100%;
   grid-area: content;
   display: grid;
   grid-template-columns: 2fr 7fr 1fr;
@@ -97,6 +98,7 @@
     flex-direction: row;
     align-items: flex-start;
     .Project {
+      width: 80%;
       margin: 25px 25px;
       border-left: solid 0.5px #4ae444;
       .PrjName {

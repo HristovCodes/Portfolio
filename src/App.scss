@@ -14,15 +14,11 @@ body {
 .Tab {
   height: 100%;
   grid-area: tab;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 15fr;
-  grid-template-areas:
-    "nav"
-    "content";
 }
 
 .Nav {
+  display: none;
+  /*
   grid-area: nav;
   display: flex;
   flex-direction: row;
@@ -49,13 +45,5 @@ body {
       outline: 0;
     }
   }
-}
-
-@media (max-width: 550px) {
-  .Tab {
-    grid-template-rows: 15fr 1fr;
-    grid-template-areas:
-      "content"
-      "nav";
-  }
+  */
 }
