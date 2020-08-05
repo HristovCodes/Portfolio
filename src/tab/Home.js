@@ -61,10 +61,16 @@ class Skills extends React.Component {
           <li>Tailwind</li>
         </ul>
         <ul className="Category">
+          <li className="Header">Testing</li>
+          <li>Jest</li>
+          <li>React Testing Library</li>
+        </ul>
+        <ul className="Category">
           <li className="Header">Other</li>
           <li>Git</li>
           <li>WebPack</li>
           <li>Figma</li>
+          <li>Firebase</li>
         </ul>
       </div>
     );
@@ -95,6 +101,17 @@ class Projects extends React.Component {
           <Links
             code="https://github.com/HristovCodes/Personal-Library"
             visit="https://hristovcodes.github.io/Personal-Library/"
+          ></Links>
+        </div>
+        <div className="Container">
+          <Project
+            name="Weather App"
+            languages={["HTML", "CSS", "ES6", "ReactJS"]}
+            description="View local weather or weather anywhere else in the world. Weather app made using Open Weather Map, Giphy and Here API."
+          ></Project>
+          <Links
+            code="https://github.com/HristovCodes/Weather-App"
+            visit="https://hristovcodes.github.io/Weather-App/"
           ></Links>
         </div>
       </div>
