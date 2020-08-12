@@ -58,11 +58,16 @@ class Skills extends React.Component {
           <li>Asp.Net</li>
           <li>Entity Framework</li>
           <li>React</li>
-          <li>Tailwind</li>
+        </ul>
+        <ul className="Category">
+          <li className="Header">Databases</li>
+          <li>Firebase</li>
+          <li>MSSQL</li>
         </ul>
         <ul className="Category">
           <li className="Header">Testing</li>
           <li>Jest</li>
+          <li>Enzyme</li>
           <li>React Testing Library</li>
         </ul>
         <ul className="Category">
@@ -70,7 +75,6 @@ class Skills extends React.Component {
           <li>Git</li>
           <li>WebPack</li>
           <li>Figma</li>
-          <li>Firebase</li>
         </ul>
       </div>
     );
@@ -88,7 +92,7 @@ class Projects extends React.Component {
             description="Asp.Net Core e-commerce web app develepod using Asp.Net Core, EF Core and MSSQLServer for the database."
           ></Project>
           <Links
-            code="https://github.com/HristovCodes/Pellio-Project"
+            code="https://github.com/HristovCodes/Pellio-Project/"
             visit=""
           ></Links>
         </div>
@@ -99,7 +103,7 @@ class Projects extends React.Component {
             description="Web application that allows you to keep track of books that you have read and ones that you are reading."
           ></Project>
           <Links
-            code="https://github.com/HristovCodes/Personal-Library"
+            code="https://github.com/HristovCodes/Personal-Library/"
             visit="https://hristovcodes.github.io/Personal-Library/"
           ></Links>
         </div>
@@ -110,8 +114,19 @@ class Projects extends React.Component {
             description="View local weather or weather anywhere else in the world. Weather app made using Open Weather Map, Giphy and Here API."
           ></Project>
           <Links
-            code="https://github.com/HristovCodes/Weather-App"
+            code="https://github.com/HristovCodes/Weather-App/"
             visit="https://hristovcodes.github.io/Weather-App/"
+          ></Links>
+        </div>
+        <div className="Container">
+          <Project
+            name="Find Waldo"
+            languages={["HTML", "CSS", "ES6", "ReactJS", "Firebase"]}
+            description="Photo tagging game. Your goal is to find a certain character (e.g Waldo) in a big image with many more characters."
+          ></Project>
+          <Links
+            code="https://github.com/HristovCodes/Find-Waldo/"
+            visit="https://hristovcodes.github.io/Find-Waldo/"
           ></Links>
         </div>
       </div>
