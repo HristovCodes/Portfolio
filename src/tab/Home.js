@@ -89,22 +89,11 @@ class Projects extends React.Component {
           <Project
             name="Pellio"
             languages={["C#", "EF", "HTML", "CSS", "ES6", "MSSQL"]}
-            description="Asp.Net Core e-commerce web app develepod using Asp.Net Core, EF Core and MSSQLServer for the database."
+            description="Asp.Net Core e-commerce web app developed using Asp.Net Core, EF Core and MSSQLServer for the database."
           ></Project>
           <Links
             code="https://github.com/HristovCodes/Pellio-Project/"
             visit=""
-          ></Links>
-        </div>
-        <div className="Container">
-          <Project
-            name="Personal Library"
-            languages={["HTML", "CSS", "ES6", "Firebase"]}
-            description="Web application that allows you to keep track of books that you have read and ones that you are reading."
-          ></Project>
-          <Links
-            code="https://github.com/HristovCodes/Personal-Library/"
-            visit="https://hristovcodes.github.io/Personal-Library/"
           ></Links>
         </div>
         <div className="Container">
@@ -127,6 +116,17 @@ class Projects extends React.Component {
           <Links
             code="https://github.com/HristovCodes/Find-Waldo/"
             visit="https://hristovcodes.github.io/Find-Waldo/"
+          ></Links>
+        </div>
+        <div className="Container">
+          <Project
+            name="Personal Library"
+            languages={["HTML", "CSS", "ES6", "Firebase"]}
+            description="Web application that allows you to keep track of books that you have read and ones that you are reading."
+          ></Project>
+          <Links
+            code="https://github.com/HristovCodes/Personal-Library/"
+            visit="https://hristovcodes.github.io/Personal-Library/"
           ></Links>
         </div>
       </div>
