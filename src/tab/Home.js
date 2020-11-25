@@ -98,6 +98,17 @@ class Projects extends React.Component {
         </div>
         <div className="Container">
           <Project
+            name="Events Board"
+            languages={["HTML", "CSS", "ES6", "ReactJS", "Firebase"]}
+            description="A social media for events such as workshops, store openings, concerts and anything else in between."
+          ></Project>
+          <Links
+            code="https://github.com/HristovCodes/Events-Board/"
+            visit="https://hristovcodes.github.io/Events-Board/"
+          ></Links>
+        </div>
+        <div className="Container">
+          <Project
             name="Weather App"
             languages={["HTML", "CSS", "ES6", "ReactJS"]}
             description="View local weather or weather anywhere else in the world. Weather app made using Open Weather Map, Giphy and Here API."
