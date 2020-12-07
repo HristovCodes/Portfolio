@@ -6,8 +6,11 @@ export default class Home extends React.Component {
     return (
       <div className="Home">
         <Information></Information>
-        <Skills></Skills>
-        <Projects></Projects>
+        <Hero></Hero>
+        <div className="Grid">
+          <Skills></Skills>
+          <Projects></Projects>
+        </div>
       </div>
     );
   }
@@ -58,17 +61,14 @@ class Skills extends React.Component {
           <li>Asp.Net</li>
           <li>Entity Framework</li>
           <li>React</li>
+          <li>Jest</li>
+          <li>Enzyme</li>
+          <li>React Testing Library</li>
         </ul>
         <ul className="Category">
           <li className="Header">Databases</li>
           <li>Firebase</li>
           <li>MSSQL</li>
-        </ul>
-        <ul className="Category">
-          <li className="Header">Testing</li>
-          <li>Jest</li>
-          <li>Enzyme</li>
-          <li>React Testing Library</li>
         </ul>
         <ul className="Category">
           <li className="Header">Other</li>
@@ -184,6 +184,42 @@ class Project extends React.Component {
         <p className="PrjName">{this.props.name}</p>
         <p className="Description">{this.props.description}</p>
         {langs}
+      </div>
+    );
+  }
+}
+
+class Hero extends React.Component {
+  render() {
+    return (
+      <div className="About">
+        <div className="AboutText">
+          <h2>About me</h2>
+          <p className="Intro">Hello, I'm Ivailo</p>
+          <p>
+            I’m a developer with a keen interest in web technologies, sports and
+            music.
+          </p>
+          <p>
+            I also love learning and sharing my knowledge about technologies
+            that I’m passionate about. I do this by doing code reviews for
+            friends, reviewing community code, contrubuting to open-source
+            projects, and writing blog posts.
+          </p>
+          <p>
+            I’m capable of learning new tools and technologies quickly and
+            efficiently when needed. I’m enjoy a good challenge and therefore am
+            well-organized to deliver consistent results.
+          </p>
+        </div>
+        <div className="AboutImg">
+          <div className="Frame">
+            <img></img>
+          </div>
+          <div className="Frame">
+            <img></img>
+          </div>
+        </div>
       </div>
     );
   }

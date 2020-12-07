@@ -1,21 +1,19 @@
 @import "../App.scss";
+$maincolor: #4ae444;
+$seccolor: #3fc83a;
+$mainaccent: #5d5d5d;
+$secaccent: #727272;
 
-.Home {
+.Grid {
   height: 100%;
   grid-area: content;
   display: grid;
   grid-template-columns: 2fr 7fr 1fr;
-  grid-template-rows: 2fr 8fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  grid-template-areas:
-    "info info info"
-    "skills projects links";
+  grid-template-areas: "skills projects links";
 }
 
-.Information {
-  grid-area: info;
-}
 .Projects {
   grid-area: projects;
 }
@@ -29,6 +27,7 @@
 .Information {
   display: flex;
   flex-direction: row;
+  height: 15vh;
   .Me {
     flex-grow: 1;
     display: flex;
@@ -37,12 +36,12 @@
     padding-left: 25px;
     .Name {
       font-family: $mainfont;
-      color: #4ae444;
+      color: $maincolor;
       font-size: 3em;
     }
     .Title {
       font-family: $secondaryfont;
-      color: #3fc83a;
+      color: $seccolor;
       font-size: 1.4em;
     }
   }
@@ -52,7 +51,7 @@
     justify-content: center;
     padding-right: 10px;
     span {
-      color: #3fc83a;
+      color: $seccolor;
       font-size: 1.2em;
     }
     p,
@@ -60,11 +59,11 @@
       padding-bottom: 8px;
     }
     a {
-      color: #5d5d5d;
+      color: $mainaccent;
       text-decoration: none;
     }
     text-align: start;
-    color: #5d5d5d;
+    color: $mainaccent;
     font-family: $secondaryfont;
     font-size: 1em;
   }
@@ -75,16 +74,16 @@
     padding-top: 25px;
     padding-left: 25px;
     li {
-      border-left: solid 0.5px #4ae444;
+      border-left: solid 0.5px $maincolor;
       padding: 3px 2.5px;
       font-family: $secondaryfont;
-      color: #727272;
+      color: $secaccent;
       font-size: 1em;
     }
     .Header {
       font-family: $mainfont;
       text-decoration: underline;
-      color: #5d5d5d;
+      color: $mainaccent;
       font-size: 1.2em;
     }
   }
@@ -100,22 +99,22 @@
     .Project {
       width: 80%;
       margin: 25px 25px;
-      border-left: solid 0.5px #4ae444;
+      border-left: solid 0.5px $maincolor;
       .PrjName {
         font-family: $mainfont;
         text-decoration: underline;
-        color: #5d5d5d;
+        color: $mainaccent;
         font-size: 1.2em;
         padding: 4px 10px;
       }
       .Description {
         font-family: $secondaryfont;
-        color: #727272;
+        color: $secaccent;
         font-size: 1em;
         padding: 4px 10px;
       }
       .Languages {
-        color: #727272;
+        color: $secaccent;
         font-family: $secondaryfont;
         font-size: 0.8em;
         display: flex;
@@ -124,7 +123,7 @@
         .Lang {
           padding: 4px 5px;
           margin: 5px 7px;
-          border: solid 2px #4ae444;
+          border: solid 2px $maincolor;
           border-radius: 5px;
         }
       }
@@ -139,7 +138,7 @@
   justify-content: space-evenly;
   align-content: center;
   .Btn {
-    background-color: #3fc83a;
+    background-color: $seccolor;
     border-radius: 8px;
     color: #ffffff;
     font-family: $secondaryfont;
@@ -148,6 +147,51 @@
     font-size: 1.1em;
     padding: 5px 25px;
     margin: 8px 0;
+  }
+}
+
+.About {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .AboutImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    margin: 0 25px;
+    .Frame {
+      height: 220px;
+      width: 150px;
+      border: solid 1px $maincolor;
+      transform: translate(20px, -20px);
+      img {
+        display: block;
+        height: 220px;
+        width: 150px;
+        background-color: $secaccent;
+        transform: translate(-20px, 20px);
+      }
+    }
+  }
+  .AboutText {
+    margin: 25px 25px;
+    width: 400px;
+    h2 {
+      font-family: "Galada", cursive;
+      text-decoration: underline;
+      color: $mainaccent;
+      font-size: 1.6em;
+    }
+    .Intro {
+      color: $mainaccent;
+    }
+    p {
+      line-height: 25px;
+      font-size: 1.2em;
+      color: $secaccent;
+      font-family: "Baloo Da 2", cursive;
+    }
   }
 }
 
@@ -166,16 +210,34 @@
     font-size: 0.8em;
   }
   .Skills {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 25px;
   }
-  .Home {
+  .Grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
-      "info"
-      "projects"
-      "skills";
+      "skills"
+      "projects";
+  }
+  .About {
+    flex-direction: column;
+    .AboutImg {
+      flex-direction: row;
+      flex-grow: 0;
+      width: 100%;
+      .Frame {
+        height: 150px;
+        width: 100px;
+        img {
+          height: 150px;
+          width: 100px;
+        }
+      }
+    }
+    .AboutText {
+      width: auto;
+    }
   }
 }
