@@ -33,7 +33,11 @@ class Information extends React.Component {
             <span>Mail:</span>
             ivailohristov1990@gmail.com
           </p>
-          <a target="_blank" href="https://github.com/HristovCodes">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/HristovCodes"
+          >
             <span>Github:</span>
             github.com/HristovCodes/
           </a>
@@ -47,6 +51,7 @@ class Skills extends React.Component {
   render() {
     return (
       <div className="Skills">
+        <h2>Skills</h2>
         <ul className="Category">
           <li className="Header">Languages</li>
           <li>C#</li>
@@ -85,6 +90,7 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="Projects">
+        <h2>Projects</h2>
         <div className="Container">
           <Project
             name="Pellio"
@@ -150,7 +156,12 @@ class Links extends React.Component {
     if (this.props.visit === "") {
       return (
         <div className="Links">
-          <a target="_blank" href={this.props.code} className="Btn">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={this.props.code}
+            className="Btn"
+          >
             Code
           </a>
         </div>
@@ -158,10 +169,20 @@ class Links extends React.Component {
     } else {
       return (
         <div className="Links">
-          <a target="_blank" href={this.props.code} className="Btn">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={this.props.code}
+            className="Btn"
+          >
             Code
           </a>
-          <a target="_blank" href={this.props.visit} className="Btn">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={this.props.visit}
+            className="Btn"
+          >
             Visit
           </a>
         </div>
@@ -197,7 +218,7 @@ class Hero extends React.Component {
           <h2>About me</h2>
           <p className="Intro">Hello, I'm Ivailo</p>
           <p>
-            I’m a developer with a keen interest in web technologies, sports and
+            I’m a developer with a keen interest in web development, sports and
             music.
           </p>
           <p>
@@ -207,17 +228,17 @@ class Hero extends React.Component {
             projects, and writing blog posts.
           </p>
           <p>
-            I’m capable of learning new tools and technologies quickly and
-            efficiently when needed. I’m enjoy a good challenge and therefore am
-            well-organized to deliver consistent results.
+            I’m capable of learning new tools and stacks quickly and efficiently
+            when needed. I enjoy a good challenge, am well-organized and able to
+            deliver consistent results.
           </p>
         </div>
         <div className="AboutImg">
           <div className="Frame">
-            <img></img>
+            <img alt=""></img>
           </div>
           <div className="Frame">
-            <img></img>
+            <img alt=""></img>
           </div>
         </div>
       </div>
