@@ -225,7 +225,7 @@ class Hero extends React.Component {
             I also love learning and sharing my knowledge about technologies
             that I’m passionate about. I do this by doing code reviews for
             friends, reviewing community code, contrubuting to open-source
-            projects, and writing blog posts.
+            projects and writing blog posts.
           </p>
           <p>
             I’m capable of learning new tools and stacks quickly and efficiently
